@@ -58,8 +58,8 @@ $ npm run dev
 Open the URL shown in your terminal.
 
 If a Cognito prompt will ask you to sign in. Use the following credentials:
-Username: testuser
-Password: Nc!19690628
+- Username: testuser
+- Password: Nc!19690628
 
 # References
 [aws cdk example](https://github.com/aws-samples/aws-cdk-examples/tree/main/typescript/s3-object-lambda)
