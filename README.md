@@ -25,7 +25,7 @@ The AWS SDK handler performs the following actions:
     - append the text into file and upload the new file into S3 bucket.
     - Terminates the EC2 instance.
 
-# Getting Started
+# How to run 
 Clone the repository:
 ```bash
 $ git clone <repository-url>
@@ -42,6 +42,7 @@ $ npm install
 Deploy the AWS CDK stack:
 ```bash
 $ cd ../..
+$ aws sso login --profile <your-profile>
 $ cdk deploy --profile <your-profile>
 ```
 
@@ -57,9 +58,10 @@ $ npm run dev
 ```
 Open the URL shown in your terminal.
 
-If a Cognito prompt will ask you to sign in. Use the following credentials:
-- Username: testuser
-- Password: Nc!19690628
+If a Cognito prompt will ask you to sign in. Use the following instructions:
+- Create a user with username and password. A valid password must at least 11 digits and contain a lower letter, an upper letter, a symbol character and numbers.
+- After create a account, please go to aws console and search Cognito. Choose the userpool created by cdk - choose the username just created - click 'Action' - click 'Confirm account'
+- Back to the front-end React, reload the web page back to sign in, enter your username and password
 
 # References
 [aws cdk example](https://github.com/aws-samples/aws-cdk-examples/tree/main/typescript/s3-object-lambda)
